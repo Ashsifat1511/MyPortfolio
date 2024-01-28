@@ -26,11 +26,15 @@ header nav ul li a{
     grid-column-gap: 2rem;
 }
 
-.image{
+.image-container{
     width: 100%;
     height: auto;
 }
-
+.image-container img{
+    width: 400px;
+    height: auto;
+    margin: auto;
+}
 
 .timeline{
     margin-top: 2rem;
