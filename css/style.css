@@ -1,6 +1,12 @@
 body{
     font-size: 62.5%;
 }
+.title{
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 1rem;
+
+}
 header nav{
     background-color: #ebebeb;
     padding: 1.5rem 0px;
