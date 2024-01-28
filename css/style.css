@@ -1,0 +1,70 @@
+body{
+    margin : 0;
+}
+#container{
+    width: 1280px;
+    padding: 0;
+    margin: auto;
+    background-color: #ebebeb;
+}
+#menu{
+    width: 100%;
+    height: 120px;
+    background-color:#ebebeb;
+}
+#about{
+    width: 100%;
+    height: 500px;
+    background-color:#ebebeb;
+}
+#logo{
+    width: 40%;
+    height: 100%;
+    background-color:#ebebeb;
+    float: left;
+}
+#about-text{
+    width: 60%;
+    height: 100%;
+    background-color:#ebebeb;
+    float: right;
+}
+
+#timeline{
+    width: 100%;
+    height: 600px;
+    background-color:#ebebeb;
+}
+
+#skills{
+    width: 100%;
+    height: 600px;
+    background-color:#ebebeb;
+}
+
+#projects{
+    width: 100%;
+    height: 600px;
+    background-color:#ebebeb;
+}
+
+#achievement{
+    width: 100%;
+    height: 600px;
+    background-color:#ebebeb;
+}
+
+#contact{
+    width: 100%;
+    height: 600px;
+    background-color:#ebebeb;
+}
+
+#footer{
+    width: 100%;
+    height: 100px;
+    background-color:#ebebeb;
+}
+
+
+
