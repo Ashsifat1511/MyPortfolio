@@ -66,10 +66,12 @@ header nav ul li a{
 .timeline-caption{
     padding: 3rem 0;
 }
+.explore{
+    text-align: center;
+    margin-top: 2rem;
+}
 @query screen and (max-width: 768px){
     .about{
         grid-template-columns: 1fr;
     }
 }
-```
-```
