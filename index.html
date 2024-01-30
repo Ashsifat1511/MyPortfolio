@@ -2,68 +2,247 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Md Ashrarul Haque Sifat's Portfolio</title>
+    <title>Md Ashrarul Haque Sifat</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
-    <h1 class="title">Md Ashrarul Haque Sifat</h1>
-    <header>
-      <nav>
-        <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Timeline</li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Skills</a></li>
-            <li><a href="">Achievements</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
+    <h1 class="myname">Md Ashrarul Haque Sifat's Portfolio</h1>
+    <section id="about">
+      <nav id="desktop-nav">
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </nav>
-    </header>
-    <section class="about">
-        <div class="image-container">
-            <img src="images/dp.jpg">
+
+      <nav id="nav">
+        <div class="menu">
+          <div class="icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#timeline" onclick="toggleMenu()">Timeline</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li>
+              <a href="#achievements" onclick="toggleMenu()">Achievements</a>
+            </li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
         </div>
-        <div class="about-me">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum natus quaerat alias veritatis, animi numquam dolorem, omnis dolore repellendus molestiae, necessitatibus aspernatur dolorum voluptatibus consequatur placeat obcaecati odio magnam ab.</p>
+      </nav>
+      <section id="profile">
+        <div class="section__pic-container">
+          <img
+            src="./images/dp.jpg"
+            alt="Md Ashrarul Haque Sifat's Profile picture"
+          />
         </div>
+        <div class="section__text">
+          <h1 class="title">Hey! I'm Md Ashrarul Haque Sifat</h1>
+          <p class="section__text__p2">
+            a student of Computer Science and Engineering<br />at Khulna
+            University of Engineering & Technology
+          </p>
+          <div id="socials-container">
+            <img
+              src="./images/linkedin.png"
+              class="icon"
+              onclick="window.open('https://www.linkedin.com/in/md-ashrarul-haque-sifat-11b43021b/')"
+            />
+            <img
+              src="./images/github.png"
+              class="icon"
+              onclick="window.open('https://github.com/Ashsifat1511')"
+            />
+            <img
+              src="./images/facebook.png"
+              class="icon"
+              onclick="window.open('https://www.facebook.com/Ash.Sifat')"
+            />
+            <img
+              src="./images/insta.png"
+              class="icon"
+              onclick="window.open('https://www.instagram.com/ashsifat1511')"
+            />
+          </div>
+        </div>
+      </section>
     </section>
 
-    <section class="timeline">
-        <div>
-            <ul>
-                <div class="circle"></div>
-                <li class="timeline-list">
-                    <h1>
-                        <a href="https://acps.edu.bd/">Adamjee Cantonment Public School</a>
-                    </h1>
-                    <h2>
-                        Dhaka Cantonment, Dhaka
-                    </h2>
-                    <h2>January 2009, June 2018</h2>
-                </li>
-                <div class="circle"></div>
-                <li class="timeline-list">
-                    <h1>
-                        <a href="https://acc.edu.bd/">Adamjee Cantonment College</a>
-                    </h1>
-                    <h2>
-                        Dhaka Cantonment, Dhaka
-                    </h2>
-                    <h2>July 2018,June 2020</h2>
-                </li>
-                <div class="circle"></div>
-                <li class="timeline-list">
-                    <h1>
-                        BSc in CSE
-                    </h1>
-                    <h2>
-                        <a href="https://kuet.ac.bd/">Khulna University of Engineering & Technology</a>
-                    </h2>
-                    <h2>March 2022, Present</h2>
-                </li>
-            </ul>
-        </div>
+    <hr class="divide" />
+    <section id="timeline">
+      <div>
+        <ul>
+          <div class="circle"></div>
+          <li class="timeline-list">
+            <h1 onclick="window.open('https://acps.edu.bd/')">
+              Adamjee Cantonment Public School
+            </h1>
+            <h2>Dhaka Cantonment, Dhaka</h2>
+            <h2>January 2009-June 2018</h2>
+          </li>
+          <div class="circle"></div>
+          <li class="timeline-list">
+            <h1 onclick="window.open('https://acc.edu.bd/')">
+              Adamjee Cantonment College
+            </h1>
+            <h2>Dhaka Cantonment, Dhaka</h2>
+            <h2>July 2018-June 2020</h2>
+          </li>
+          <div class="circle"></div>
+          <li class="timeline-list">
+            <h1>BSc in CSE</h1>
+            <h2 onclick="window.open('https://kuet.ac.bd/')">
+              Khulna University of Engineering & Technology
+            </h2>
+            <h2>March 2022-Present</h2>
+          </li>
+        </ul>
+      </div>
     </section>
+    <hr class="divide" />
+    <section id="projects">
+      <h1 class="title">My Projects</h1>
+      <div>
+        <ul>
+          <div class="circle"></div>
+          <li class="timeline-list">
+            <h1>Inventory Management System</h1>
+            <h2
+              onclick="window.open('https://github.com/Ashsifat1511/InventoryManagementSystem')"
+            >
+              <b>Git Link</b>
+            </h2>
+            <p>
+              It is a project of my university course CSE-2200 Course
+              Title:"Advanced Programming" The task was to make a desktop
+              application usnig the language Java. So I used Java as my
+              programming language and used CSS to design the UI more perfectly.
+              Also MYSQL was used for database management. Platoform: a. IntelIJ
+              b . JAVA SDK 8 c. MYSQL server 8.0
+            </p>
+          </li>
+          <div class="circle"></div>
+          <li class="timeline-list">
+            <h1>Sports Shop Management System</h1>
+            <h2
+              onclick="window.open('https://github.com/Ashsifat1511/Sports-Shop-Management')"
+            >
+              <b>Git Link</b>
+            </h2>
+            <p>
+              In this project I implemented a console base project to manage a
+              sports shop with the concept of object oriented programming using
+              Java. The details of the project is given below: Sport equipment
+              database: The equipments related to the sport can be managed in a
+              well organized in a well organized way.
+            </p>
+          </li>
+          <div class="circle"></div>
+          <li class="timeline-list">
+            <h1>Bus Company Management System</h1>
+            <h2
+              onclick="window.open('https://github.com/Ashsifat1511/Bus-Company-Management-System')"
+            >
+              <b>Git Link</b>
+            </h2>
+            <p>
+              Bus Company Management System This project is completed using the
+              concept of Object Oriented Programming with C++. In this system
+              the admin can add or remove drivers and bus. The visitors can
+              create their account and the log in into it to book ticket for the
+              bus and as soon as the visitor books a ticket the admin gets it in
+              his/her account
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <hr class="divide" />
+    <section id="achievements">
+      <h1 class="title">My Achievements</h1>
+
+      <div class="achievements-container">
+        <div class="about-container">
+          <div class="details-container acv-details-container">
+            <h3 class="acv-title">Dhaka Division Champion<br /></h3>
+            <p>
+              Participated in the Inter College Volleyball Tournament 2020.
+              Became the champion of Dhaka Division
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 acv-button"
+                onclick="window.open('./resources/divisionclg.pdf')"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container acv-details-container">
+            <h3 class="acv-title">Dhaka District Champion<br /></h3>
+            <p>
+              Participated in the Inter College Volleyball Tournament 2020.
+              Became the champion of Dhaka District
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 acv-button"
+                onclick="window.open('./resources/districtclg.pdf')"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+
+          <div class="details-container acv-details-container">
+            <h3 class="acv-title">Dhaka District Champion<br /></h3>
+            <p>
+              Participated in the Inter School Volleyball Tournament 2017.
+              Became the champion of Dhaka District
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 acv-button"
+                onclick="window.open('./resources/districtschl1.pdf')"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-container">
+          <div class="details-container acv-details-container">
+            <h3 class="acv-title">Dhaka District Champion<br /></h3>
+            <p>
+              Participated in the Inter School Volleyball Tournament 2016.
+              Became the champion of Dhaka District
+            </p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 acv-button"
+                onclick="window.open('./resources/districtschl2.pdf')"
+              >
+                View Certificate
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr class="divide" />
     <script src="script.js"></script>
   </body>
 </html>
