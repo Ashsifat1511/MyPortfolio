@@ -2,68 +2,119 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Md Ashrarul Haque Sifat's Portfolio</title>
+    <title>Md Ashrarul Haque Sifat</title>
     <link rel="stylesheet" type="text/css" href="css/style.css" />
   </head>
   <body>
-    <h1 class="title">Md Ashrarul Haque Sifat</h1>
-    <header>
-      <nav>
-        <ul>
-            <li><a href="">About</a></li>
-            <li><a href="">Timeline</li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Skills</a></li>
-            <li><a href="">Achievements</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
+    <h1 class="myname">Md Ashrarul Haque Sifat's Portfolio</h1>
+    <section id="about">
+      <nav id="desktop-nav">
+        <div>
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
       </nav>
-    </header>
-    <section class="about">
-        <div class="image-container">
-            <img src="images/dp.jpg">
+
+      <nav id="nav">
+        <div class="menu">
+          <div class="icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#timeline" onclick="toggleMenu()">Timeline</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li>
+              <a href="#achievements" onclick="toggleMenu()">Achievements</a>
+            </li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
         </div>
-        <div class="about-me">
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum natus quaerat alias veritatis, animi numquam dolorem, omnis dolore repellendus molestiae, necessitatibus aspernatur dolorum voluptatibus consequatur placeat obcaecati odio magnam ab.</p>
+      </nav>
+      <section id="profile">
+        <div class="section__pic-container">
+          <img
+            src="./images/dp.jpg"
+            alt="Md Ashrarul Haque Sifat's Profile picture"
+          />
         </div>
+        <div class="section__text">
+          <h1 class="title">Hey! I'm Md Ashrarul Haque Sifat</h1>
+          <p class="section__text__p2">
+            a student of Computer Science and Engineering<br />at Khulna
+            University of Engineering & Technology
+          </p>
+          <div id="socials-container">
+            <img
+              src="./images/linkedin.png"
+              class="icon"
+              onclick="window.open('https://www.linkedin.com/in/md-ashrarul-haque-sifat-11b43021b/')"
+            />
+            <img
+              src="./images/github.png"
+              class="icon"
+              onclick="window.open('https://github.com/Ashsifat1511')"
+            />
+            <img
+              src="./images/facebook.png"
+              class="icon"
+              onclick="window.open('https://www.facebook.com/Ash.Sifat')"
+            />
+            <img
+              src="./images/insta.png"
+              class="icon"
+              onclick="window.open('https://www.instagram.com/ashsifat1511')"
+            />
+          </div>
+        </div>
+      </section>
     </section>
 
-    <section class="timeline">
-        <div>
-            <ul>
-                <div class="circle"></div>
-                <li class="timeline-list">
-                    <h1>
-                        <a href="https://acps.edu.bd/">Adamjee Cantonment Public School</a>
-                    </h1>
-                    <h2>
-                        Dhaka Cantonment, Dhaka
-                    </h2>
-                    <h2>January 2009, June 2018</h2>
-                </li>
-                <div class="circle"></div>
-                <li class="timeline-list">
-                    <h1>
-                        <a href="https://acc.edu.bd/">Adamjee Cantonment College</a>
-                    </h1>
-                    <h2>
-                        Dhaka Cantonment, Dhaka
-                    </h2>
-                    <h2>July 2018,June 2020</h2>
-                </li>
-                <div class="circle"></div>
-                <li class="timeline-list">
-                    <h1>
-                        BSc in CSE
-                    </h1>
-                    <h2>
-                        <a href="https://kuet.ac.bd/">Khulna University of Engineering & Technology</a>
-                    </h2>
-                    <h2>March 2022, Present</h2>
-                </li>
-            </ul>
-        </div>
+    <hr class="divide" />
+    <section id="timeline">
+      <div>
+        <ul>
+          <div class="circle"></div>
+          <li class="timeline-list">
+            <h1>
+              <a href="https://acps.edu.bd/"
+                >Adamjee Cantonment Public School</a
+              >
+            </h1>
+            <h2>Dhaka Cantonment, Dhaka</h2>
+            <h2>January 2009, June 2018</h2>
+          </li>
+          <div class="circle"></div>
+          <li class="timeline-list">
+            <h1>
+              <a href="https://acc.edu.bd/">Adamjee Cantonment College</a>
+            </h1>
+            <h2>Dhaka Cantonment, Dhaka</h2>
+            <h2>July 2018,June 2020</h2>
+          </li>
+          <div class="circle"></div>
+          <li class="timeline-list">
+            <h1>BSc in CSE</h1>
+            <h2>
+              <a href="https://kuet.ac.bd/"
+                >Khulna University of Engineering & Technology</a
+              >
+            </h2>
+            <h2>March 2022, Present</h2>
+          </li>
+        </ul>
+      </div>
     </section>
+    <hr class="divide" />
     <script src="script.js"></script>
   </body>
 </html>
