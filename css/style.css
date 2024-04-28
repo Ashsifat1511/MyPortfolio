@@ -2,13 +2,20 @@
     margin: 0;
     padding: 0;
   }
-
+  #desktop-nav {
+    position: fixed; /* Make the header fixed */
+    top: 0; /* Align the header at the top */
+    left: 0; /* Align the header to the left */
+    width: 100%; /* Span the full width of the viewport */
+    background: white; /* Set a background color to make text visible */
+    z-index: 1000; /* Ensure the header is above other content */
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.1); /* Optional: Adds shadow for better visibility */
+}
   body {
     font-family: 'Poppins', sans-serif;
     overflow-x: hidden;
     min-width: 100%;
   }
-
   html {
     scroll-behavior: smooth;
   }
@@ -174,7 +181,12 @@
     text-align: center ;
   }
   #about {
-    position: relative;
+    position: fix;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: fixed;
   }
  
   #profile {
@@ -292,6 +304,49 @@
     margin: 20px 0px;
     font-size: 25px;
     font-weight: 600;
+  }
+
+  @media  screen and (max-width: 768px) {
+    .section-container {
+      flex-direction: column;
+    }
+ 
+    .divide {
+      display: block;
+    }
+ 
+    .section__pic-container {
+      display: none;
+    }
+ 
+    .section__text {
+      margin-top: 2rem;
+    }
+ 
+    .section__text__p2 {
+      font-size: 1.2rem;
+    }
+ 
+    .tag {
+      font-size: 1.5rem;
+    }
+ 
+    .title {
+      font-size: 2rem;
+    }
+ 
+    .btn-container {
+      flex-direction: column;
+    }
+ 
+    .btn {
+      width: 100%;
+    }
+ 
+    .btn-color-2 {
+      margin-right: 0;
+    }
+    
   }
   
   
